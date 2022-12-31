@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> 
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        background-repeat:no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        /* font-family:cursive; */
+    }
+    #home::before {
+        content: "";
+        background: url(./img/background.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+      }
+      ul,
+      li {
+        list-style-type: none;
+      }
+      ul,
+      li,
+      a {
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+      }
+      ul,
+      li,
+      a:hover {
+        color: rgb(34, 29, 29);
+      }
+      nav {
+        border: 2px solid rgb(90 84 84);
+        background-color: rgb(90 84 84);
+       
+      }
+      .navbar {
+        display: flex;
+        
+      }
+      .search {
+        padding: 10px 20px;
+        border: 2px solid white;
+        float: right;
+        font-family: "Caveat", cursive;
+        margin-top: 9px;
+        margin-right: 50px;
+        border-radius: 20px;
+        background: transparent;
+      }
+::placeholder{
+    color: aliceblue;
+    font-size: 20px ;
+}
+.images{
+  display: grid;
+  grid-template-areas:
+  "image1 image2 image3 image4"
+  ;
+}
+img{
+  width: 300px;
+  height: 380px;
+  border: 5px solid black;
+  margin-top: 150px;
+}
+#box1{
+   grid-area: image1;
+   margin-left: 50px;
+}
+#box2{
+ grid-area: image2;
+}
+#box3{
+ grid-area: image3;
+}
+#box4{
+ grid-area: image4;
+}
+    footer {
+        background-color: black;
+        color: aliceblue;
+        height: auto;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 157px;
+      }
+      .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .footer-content h3{
+        font-size: 1.7rem;
+        font-weight: 400;
+
+      }
+      .footer-content p{
+        margin: 10px auto;
+        font-size: 14px;
+      }
+      .footer-content li a:hover{
+        color: rgb(78, 77, 77);
+      }
+      .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+      .socials{
+        display: flex;
+      }
+    
+    </style>
+    <script src="./img/flashvideo.mp4"></script>
+</head>
+<body>
+    <nav>
+        <div >
+            <input type="search" placeholder="search" class="search">
+        </div>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about us .html">About us</a></li>
+            <li><a href="./contact us.html">Contact us</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="./services .html">Services</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+      <div class="images">
+       <img src="./img/img (1).jpg" alt="coding" id="box1"> 
+       <img src="./img/img (2).jpg" alt="coding" id="box2">
+       <img src="./img/img (3).jpg" alt="coding" id="box3">
+       <img src="./img/img (4).jpg" alt="coding" id="box4">
+       </div>
+      </section>
+    <footer>
+        <div class="footer-content">
+            <h3>coding world</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita suscipit porro consequuntur sapiente officiis!</p>
+            <ul class="socials">
+                <li><a href="#" ><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" ><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" ><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" ><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#" ><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+</html>
